@@ -6,7 +6,9 @@
   filter: drop-shadow(0 0 2em #61dafb);
 }
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -20,7 +22,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 .container {
   margin: 0;
   padding-top: 10vh;
@@ -113,4 +114,27 @@ button {
   button:active {
     background-color: #0f0f0f69;
   }
+}
+.td-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important; /* Space between icon and text */
+  padding: 10px 15px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease, transform 0.2s ease !important;
+}
+
+.td-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.2em !important;
+}
+
+.td-text {
+  font-size: 1em !important;
+  font-weight: bold !important;
 }
